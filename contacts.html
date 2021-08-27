@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+	<meta charset="UTF-8" />
+	<title>Contacts - Omotenashi</title>
+	<!-- ===================== META ===================== -->
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	<link rel="shortcut icon" href="assets/img/fa-icon.png" />
+	<!-- ===================== STYLE ===================== -->
+	<link rel="stylesheet" href="assets/css/slick.min.css" />
+	<link rel="stylesheet" href="assets/css/bootstrap-grid.css" />
+	<link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css" />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+		integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+	<link rel="stylesheet" href="assets/css/style.css" />
+	<link rel="stylesheet" href="assets/css/new-site.css" />
+</head>
+
+<body id="home">
+	<!--===================== HEADER =====================-->
+	<header class="header-two">
+		<a href="#" class="nav-btn">
+			<span></span>
+			<span></span>
+			<span></span>
+		</a>
+		<div class="header-two-top">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-12 col-md-6 col-lg-2 logo-two-cover">
+						<a href="index.html" class="logo-footer">
+							<img src="assets/img/Logo.png" alt="logo" />
+							<!-- <div class="logo-text"><span>info</span>rmex</div> -->
+						</a>
+					</div>
+					<div class="col-3 header-top-info">
+						<ul class="header-two-phone header-cont">
+							<li style="text-align: center">
+								<a href="tel:0974644964"><i class="fas fa-phone"></i> 0974.644.964</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-3 header-top-info">
+						<ul class="header-two-adr header-cont">
+							<li>
+								<a href="contacts.html"><i class="fas fa-map-marker-alt"></i>Pearl Plaza
+									Building,<br />
+									Binh Thanh District, HCM City
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-12 col-sm-6 col-lg-3 header-two-btn">
+						<a href="seminor.html" class="btn">Hội thảo sắp tới</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header-menu header-menu-two">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<nav class="nav-menu">
+							<ul class="nav-list">
+								<li class="dropdown">
+									<a href="index.html">Trang chủ</a>
+									<!-- <ul>
+						<li class="active"><a href="index.html">Home 1</a></li>
+						<li><a href="home-two.html">Home 2</a></li>
+					  </ul> -->
+								</li>
+								<li><a href="#trainingHouse">Đào tạo DN</a></li>
+								<li><a href="seminor.html">Operator</a></li>
+								<li><a href="educationBusiness.html">Tư vấn DN</a></li>
+								<li><a href="CSKH.html">Tư vấn DV CSKH</a></li>
+								<li><a href="TVTD.html">Tư vấn tuyển dụng</a></li>
+								<!-- <li class="dropdown">
+					  <a href="#"
+						>pages <i class="fa fa-angle-down" aria-hidden="true"></i
+					  ></a>
+					  <ul>
+						<li><a href="pravicy-policy.html">Pravicy policy</a></li>
+						<li><a href="404.html">404</a></li>
+					  </ul>
+					</li> -->
+								<li><a href="contacts.html">Liên hệ</a></li>
+							</ul>
+						</nav>
+					</div>
+					<!-- <div class="col-2">
+				<div class="header-two-search">
+				  <div class="header-search-icon">
+					<i class="fas fa-search"></i>
+				  </div>
+				  <form action="#">
+					<input type="search" name="search" placeholder="Search" />
+					<button class="btn-search" type="submit">
+					  <i class="fa fa-search" aria-hidden="true"></i>
+					</button>
+				  </form>
+				</div>
+			  </div> -->
+				</div>
+			</div>
+		</div>
+	</header>
+	<!--=================== HEADER END ===================-->
+
+	<!--=================== PAGE-TITLE ===================-->
+	<div class="page-title" style="background-image: url(assets/img/bg-page-title.jpg)">
+		<div class="container">
+			<h1 class="title-line-left">Contacts</h1>
+			<div class="breadcrumbs">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li>Contacts</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!--================= PAGE-TITLE END =================-->
+
+	<!--================= PAGE-CONTACTS =================-->
+	<section class="page-contacts">
+		<div class="container">
+			<h2 class="title-line-left">Contact with us</h2>
+			<div class="row">
+				<div class="col-12 col-sm-8">
+					<form id="contactform" action="php/contact.php" name="contactform" method="POST">
+						<ul class="form-cover">
+							<li class="inp-name">
+								<input id="name" type="text" name="your-name" placeholder="Name" />
+							</li>
+							<li class="inp-name">
+								<input id="last-name" type="text" name="your-last-name" placeholder="Last Name" />
+							</li>
+							<li class="inp-phone">
+								<input id="phone" type="tel" name="your-phone" placeholder="Phone" />
+							</li>
+							<li class="inp-email">
+								<input id="email" type="email" name="your-email" placeholder="E-mail" />
+							</li>
+							<li class="inp-text">
+								<textarea id="comments" name="your-text" placeholder="Message"></textarea>
+							</li>
+							<li class="inp-name">
+								<input id="txtCaptcha" type="text" name="your-capcha" placeholder="Capcha" />
+							</li>
+							<li class="inp-capcha">
+								<input type="text" id="txtCompare" data-action="submit" maxlength="10"
+									class="contact__input2" placeholder="Nhập 6 kí tự trong ảnh" required />
+
+							</li>
+							<li>
+								<button id="btnrefresh" value="Refresh" class="refreshCapcha"
+									onclick="GenerateCaptcha();">
+									<i class="fa fa-refresh icon-refresh"></i>
+								</button>
+								<button id="btnValid" type="button" value="Check" class="refreshCapcha"
+									onclick="alert(ValidCaptcha());">
+									<i class="fa fa-check icon-check"></i>
+								</button>
+							</li>
+						</ul>
+						<!-- <div class="checkbox-wrap">
+                <div class="checkbox-cover">
+                  <input type="checkbox" />
+                  <p>
+                    By using this form you agree with the storage and handling
+                    of your data by this website.
+                  </p>
+                </div>
+              </div> -->
+
+						<div class="btn-form-cover">
+							<button id="#submit" type="submit" class="btn">
+								Sign up now
+							</button>
+						</div>
+					</form>
+					<div id="message"></div>
+				</div>
+				<div class="col-12 col-sm-4 page-cont-info">
+					<div class="cont-info-item">
+						<i class="fas fa-map-marker-alt"></i>
+						<h5>Tại HCM</h5>
+						<p>Office 2, 8th Floor, Office area,
+
+							Pearl Plaza Building, 561A Dien Bien Phu Street,
+
+							Ward 25, Binh Thanh District, HCM City</p>
+					</div>
+					<div class="cont-info-item">
+						<i class="fa fa-phone" aria-hidden="true"></i>
+						<h5>Hotline </h5>
+						<ul class="cont-phone">
+							<li><a href="tel:0909847808">0909847808</a></li>
+						</ul>
+					</div>
+					<div class="cont-info-item">
+						<i class="fa fa-envelope" aria-hidden="true"></i>
+						<h5>Email</h5>
+						<ul class="cont-email">
+							<li>
+								<a href="mailto:cs@omotenashi.com.vn ">cs@omotenashi.com.vn </a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--================= PAGE-CONTACTS END =================-->
+
+	<!--===================== S-MAP =====================-->
+	<section>
+		<div class="container-fuild">
+			<iframe
+				src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15676.592762925118!2d106.718563!3d10.79996!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528a61114b58f%3A0xffab814fd0258439!2zNTYxQSDEkGnhu4duIEJpw6puIFBo4bunLCBQaMaw4budbmcgMjUsIELDrG5oIFRo4bqhbmgsIFRow6BuaCBwaOG7kSBI4buTIENow60gTWluaCwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2sus!4v1630091115595!5m2!1svi!2sus"
+				width="100%" height="300" style="border: 0" allowfullscreen="" loading="lazy"></iframe>
+		</div>
+	</section>
+	<!--==================== S-MAP END ===================-->
+
+	<!--===================== FOOTER =====================-->
+	<footer>
+		<div class="container">
+		  <div class="row">
+			<div class="col-12 col-md-4">
+			  <a href="index.html" class="logo-footer">
+				<img src="assets/img/Logo-footer.png" alt="logo" />
+			  </a>
+			  <div class="footer-text">
+				CÔNG TY TNHH TV-TM-DV <br />
+				OMOTENASHI VIỆT-NHẬT
+			  </div>
+			  <ul class="soc-link">
+				<li>
+				  <a
+					target="_blank"
+					href="https://www.facebook.com/groups/www.omotenashi.com.vn/"
+					><i class="fab fa-facebook-f"></i
+				  ></a>
+				</li>
+  
+				<li>
+				  <a target="_blank" href="https://www.youtube.com"
+					><i class="fab fa-youtube"></i
+				  ></a>
+				</li>
+				<li>
+				  <a
+					target="_blank"
+					href="mailto:
+					thao.nguyen@omotenashi.com.vn"
+					><i class="fas fa-envelope"></i
+				  ></a>
+				</li>
+			  </ul>
+			</div>
+			<div class="col-12 col-sm-6 col-md-4">
+			  <h6 class="text-blue">Contacts</h6>
+			  <ul class="footer-contacts">
+				<li>
+				  <i class="fas fa-map-marker-alt"></i>
+				  <a href="contacts.html"
+					>Office 2, 8th Floor, Office area, Pearl Plaza Building, 561A
+					Dien Bien Phu Street, Ward 25, Binh Thanh District, HCM City
+				  </a>
+				</li>
+				<li>
+				  <i class="fa fa-phone" aria-hidden="true"></i>
+				  <a href="tel:0974644964">0974.644.964</a>
+				</li>
+				<li>
+				  <i class="fas fa-globe" aria-hidden="true"></i>
+				  <a href="https://www.omotenashi.com.vn/" target="_blank"
+					>omotenashi.com.vn</a
+				  >
+				</li>
+			  </ul>
+			</div>
+			<div class="col-12 col-sm-6 col-md-4 insta-list-cover">
+			  <h6 class="text-blue">Đối tác</h6>
+			  <ul class="insta-list">
+				<li>
+				  <a target="_blank" href="#"
+					><img
+					  class="lazy"
+					  src="assets/img/placeholder-all.png"
+					  data-src="assets/img/insta-1.jpg"
+					  alt="social"
+				  /></a>
+				</li>
+				<li>
+				  <a target="_blank" href="#"
+					><img
+					  class="lazy"
+					  src="assets/img/placeholder-all.png"
+					  data-src="assets/img/insta-2.jpg"
+					  alt="social"
+				  /></a>
+				</li>
+				<li>
+				  <a target="_blank" href="#"
+					><img
+					  class="lazy"
+					  src="assets/img/placeholder-all.png"
+					  data-src="assets/img/insta-3.jpg"
+					  alt="social"
+				  /></a>
+				</li>
+				<li>
+				  <a target="_blank" href="#"
+					><img
+					  class="lazy"
+					  src="assets/img/placeholder-all.png"
+					  data-src="assets/img/insta-4.jpg"
+					  alt="social"
+				  /></a>
+				</li>
+				<li>
+				  <a target="_blank" href="#"
+					><img
+					  class="lazy"
+					  src="assets/img/placeholder-all.png"
+					  data-src="assets/img/insta-5.jpg"
+					  alt="social"
+				  /></a>
+				</li>
+				<li>
+				  <a target="_blank" href="#"
+					><img
+					  class="lazy"
+					  src="assets/img/placeholder-all.png"
+					  data-src="assets/img/insta-6.jpg"
+					  alt="social"
+				  /></a>
+				</li>
+			  </ul>
+			</div>
+		  </div>
+		</div>
+		<div class="footer-bottom">
+		  <div class="container">
+			<div class="row">
+			  <div class="col-12 col-md-4">
+				<div class="copyright">
+				  © 2021 Bản quyền thuộc về
+				  <a target="_blank" href="https://www.omotenashi.com.vn/"
+					>OMOTENASHI
+				  </a>
+				</div>
+			  </div>
+			  <div class="col-8">
+				<ul class="footer-menu">
+				  <li><a href="index.html">Home</a></li>
+				  <li><a href="#aboutUs">About us</a></li>
+				  <li><a href="events.html">Events</a></li>
+				  <li><a href="speakers.html">Speakers</a></li>
+				  <li><a href="contacts.html">Contacts</a></li>
+				</ul>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </footer>
+	<!--=================== FOOTER END ===================-->
+
+	<!--===================== TO TOP =====================-->
+	<a class="to-top" href="#home">
+		<i class="fa fa-chevron-up" aria-hidden="true"></i>
+	</a>
+	<!--=================== TO TOP END ===================-->
+
+	<!--===================== SCRIPT	=====================-->
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=your_api_key"></script>
+	<script src="assets/js/scripts.js"></script>
+	<script src="assets/js/capcha.js"></script>
+</body>
+
+</html>
